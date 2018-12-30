@@ -2,7 +2,6 @@
 
 a {
     text-decoration: none;
-    color: black;
 }
 
 body > * {
@@ -45,7 +44,12 @@ section {
 }
 .navigation__link {
     display: block;
-    padding: 53px 0;
+    padding: 13px 0;
+}
+
+.navigation__link:hover {
+    box-shadow: 0 2px grey;
+    transition: .5s;
 }
 
 .hamburger {
@@ -54,15 +58,85 @@ section {
 
 // header end
 
-.development-block {
-    background: url('../img/pexels-photo-356056.png') no-repeat;
+.development-container {
+    position: relative;
+    background: url('../img/pexels-photo-356056.jpg') no-repeat;
+    background-size: cover;
     min-height: 653px;
+    padding-top: 220px;
+}
+
+.development-container::before { 
+    content: ''; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0;
+    background: rgba(0, 0, 0, .7)
+}
+
+// Универсальный блок заголовков и подписей
+.title-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title-block-development {
+    color: white;
+}
+
+.title-block__header {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.title-block__header-development {
+    font-size: 60px;
+    z-index: 9;
+}
+
+.title-block__text-development {
+    font-size: 20px;
+    z-index: 9;
+}
+
+.title-block__buttons-block {
+    z-index: 99;
+}
+
+//Кнопки
+.scroll-button {
+    display: inline-block;
+    padding: 13px 15px;
+    border: 2x solid white;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.scroll-button:hover {
+    border: 2x solid #00897b;
+    background: #00897b;
 }
 
 /*
     mediarules block
     width: 765px
 */
+
+@media screen and (max-width: 650px) {
+    .development-container {
+        padding-top: 150px;
+    }
+    .title-block__header-development {
+        font-size: 50px;
+    }
+}
+
 
 @media screen and (max-width: 765px) {
     .navigation {
