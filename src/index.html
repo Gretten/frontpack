@@ -1,13 +1,364 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--  Meta  -->
+    <meta charset="UTF-8" />
+    <title>"КБ Очумелые Ручки"</title>
+
+    <!--  Styles  -->
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 </head>
+
 <body>
-    <p>my name is john
+
+    <header class="header-top header">
+        <div class="container-top container">
+            <div class="logo">
+                <p class="logo__text">ОЧРуК</p>
+            </div>
+            <ul class="navigation">
+                <li class="navigation__element navigation__element-selected">
+                    <a href="#" class="navigation__link">В начало</a>
+                </li>
+                <li class="navigation__element">
+                    <a href="#" class="navigation__link">Про нас</a>
+                </li>
+                <li class="navigation__element">
+                    <a href="#" class="navigation__link">Услуги</a>
+                </li>
+                <li class="navigation__element">
+                    <a href="#" class="navigation__link">Портфолио</a>
+                </li>
+                <li class="navigation__element">
+                    <a href="#" class="navigation__link">Блог</a>
+                </li>
+                <li class="navigation__element">
+                    <a href="#" class="navigation__link">Контакты</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="development-section">
+        <div class="title-block title-block-development">
+            <h1 class="title-block__header title-block__header-development">КБ Очумелые Ручки</h1>
+            <p class="title-block__text title-block__text-development">Умеем не все, беремся за что угодно!</p>
+            <div class="title-block__buttons-block">
+                <a href="#" class="scroll-button">
+                    наши услуги
+                </a>
+                <a href="#" class="scroll-button">
+                    наша команда
+                </a>
+            </div>
+            <a href="#" class="development-arrow"><i class="fas fa-angle-double-down"></i></a>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="container">
+            <div class="title-block title-block--body">
+                <h1 class="title-block__header">Про нас</h1>
+                <p class="title-block__text">
+                    Делаем сайты: лендинги, интернет-магазины, веб-приложения. <br>
+                    Верстаем <strong>HTML</strong>,
+                    стилизуем <strong>CSS</strong>, программируем <strong>JavaScript</strong>. <br>
+                    Любим <strong>jQuery</strong> и <strong>Bootstrap</strong>, иногда даже используем. <br>
+                    Не затягиваем сроки судебными исками.<br> 
+                    Берем дорого.
+                </p>
+            </div>
+        </div>
+        <div class="card-block">
+            <div class="card">
+                <img src="img/internet.png" alt="" class="card__icon">
+                <div class="title-block">
+                    <h1 class="title-block__header--card title-block__header">Рисуем иконки</h1>
+                    <p class="title-block__text--contacts title-block__text--card title-block__text">Даже держим художницу в штате. Любой каприз за
+                        ваши деньги, как говорят у нас в Одессе.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/transfer.png" alt="" class="card__icon">
+                <div class="title-block">
+                    <h1 class="title-block__header--card title-block__header">Не хамим</h1>
+                    <p class="title-block__text--contacts title-block__text--card title-block__text">Клиент всегда прав, даже если не прав. Ругаем
+                        вас исключительно в корпоративном чате.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/head.png" alt="" class="card__icon">
+                <div class="title-block">
+                    <h1 class="title-block__header--card title-block__header">Быстро соображаем</h1>
+                    <p class="title-block__text--contacts title-block__text--card title-block__text">Ни один наш сотрудник не имеет IQ ниже 50.
+                        Показываем справки, если вы не согласны.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team-section">
+        <div class="container">
+            <div class="title-block title-block--body">
+                <h1 class="title-block__header">Наша команда</h1>
+                <p class="title-block__text">
+                Вглядитесь в эти лица! Разве могут эти люди сорвать сроки, не выполнить задач, запросить сверху денег? Конечно, могут!
+                </p>
+            </div>
+        </div>
+        
+        <div class="slider owl-carousel owl-theme">
+                <div class="card--slider card">
+                        <img src="img/techlead.jpeg" alt="" class="card__icon--slider card__icon">
+                        <div class="title-block">
+                            <h1 class="title-block__header--card title-block__header">Технический директор</h1>
+                            <p class="title-block__text--contacts title-block__text--card title-block__text">"Реактивная скорость, передовые технологии и приверженность делу - вот что делает нас лучшими!"</p>
+                        </div>
+                        <div class="soc">
+                                <a href="" class="soc__button">
+                                        <i class="soc__icon fab fa-vk"></i>
+                                    </a>
+                                    <a href="" class="soc__button">
+                                        <i class="soc__icon fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="" class="soc__button">
+                                        <i class="soc__icon fab fa-twitter"></i>
+                                    </a>
+                                    <a href="" class="soc__button">
+                                       <i class="soc__icon fab fa-linkedin-in"></i>
+                                    </a>
+                            </div>
+                    </div>
+            <div class="card--slider card">
+                <img src="img/programmer.jpg" alt="" class="card__icon--slider card__icon">
+                <div class="title-block">
+                    <h1 class="title-block__header--card title-block__header">Frontend-разработчик</h1>
+                    <p class="title-block__text--contacts title-block__text--card title-block__text">"Создание интерфейсов, способствующих глубокой конверсии, - мой конёк. Наслаждаюсь своей работой!"</p>
+                </div>
+                <div class="soc">
+                        <a href="" class="soc__button">
+                                <i class="soc__icon fab fa-vk"></i>
+                            </a>
+                            <a href="" class="soc__button">
+                                <i class="soc__icon fab fa-facebook-f"></i>
+                            </a>
+                            <a href="" class="soc__button">
+                                <i class="soc__icon fab fa-twitter"></i>
+                            </a>
+                            <a href="" class="soc__button">
+                               <i class="soc__icon fab fa-linkedin-in"></i>
+                            </a>
+                    </div>
+            </div>
+            <div class="card--slider card">
+                <div class="img-wrap">
+                    <img src="img/back_.jpg" alt="" class="card__icon--slider card__icon">
+                </div>
+                <div class="title-block">
+                    <h1 class="title-block__header--card title-block__header">Backend-разработчик</h1>
+                    <p class="title-block__text--contacts title-block__text--card title-block__text">"Доверьте нам разработку серверной части. Больше никаких ловушек и сюрпризов для вашего бизнеса!"</p>
+                </div>
+                <div class="soc">
+                        <a href="" class="soc__button">
+                                <i class="soc__icon fab fa-vk"></i>
+                            </a>
+                            <a href="" class="soc__button">
+                                <i class="soc__icon fab fa-facebook-f"></i>
+                            </a>
+                            <a href="" class="soc__button">
+                                <i class="soc__icon fab fa-twitter"></i>
+                            </a>
+                            <a href="" class="soc__button">
+                               <i class="soc__icon fab fa-linkedin-in"></i>
+                            </a>
+                    </div>
+            </div>
+            <div class="card--slider card">
+                <img src="img/copywriter.jpg" alt="" class="card__icon--slider card__icon">
+                <div class="title-block">
+                    <h1 class="title-block__header--card title-block__header">Cистемный администратор</h1>
+                    <p class="title-block__text--contacts title-block__text--card title-block__text">Ни один наш сотрудник не имеет IQ ниже 50.
+                        Показываем справки, если вы не согласны.</p>
+                </div>
+                <div class="soc">
+                        <a href="" class="soc__button">
+                                <i class="soc__icon fab fa-vk"></i>
+                            </a>
+                            <a href="" class="soc__button">
+                                <i class="soc__icon fab fa-facebook-f"></i>
+                            </a>
+                            <a href="" class="soc__button">
+                                <i class="soc__icon fab fa-twitter"></i>
+                            </a>
+                            <a href="" class="soc__button">
+                               <i class="soc__icon fab fa-linkedin-in"></i>
+                            </a>
+                    </div>
+            </div>
+            <div class="card--slider card">
+                <img src="img/fin.jpg" alt="" class="card__icon--slider card__icon">
+                <div class="title-block">
+                    <h1 class="title-block__header--card title-block__header">Менеджер проектов</h1>
+                    <p class="title-block__text--contacts title-block__text--card title-block__text">Ни один наш сотрудник не имеет IQ ниже 50.
+                        Показываем справки, если вы не согласны.</p>
+                </div>
+                <div class="soc">
+                        <a href="" class="soc__button">
+                                <i class="soc__icon fab fa-vk"></i>
+                            </a>
+                            <a href="" class="soc__button">
+                                <i class="soc__icon fab fa-facebook-f"></i>
+                            </a>
+                            <a href="" class="soc__button">
+                                <i class="soc__icon fab fa-twitter"></i>
+                            </a>
+                            <a href="" class="soc__button">
+                               <i class="soc__icon fab fa-linkedin-in"></i>
+                            </a>
+                    </div>
+            </div>
+            <div class="card--slider card">
+                <img src="img/buh.jpeg" alt="" class="card__icon--slider card__icon">
+                <div class="title-block">
+                    <h1 class="title-block__header--card title-block__header">Финансовый директор</h1>
+                    <p class="title-block__text--contacts title-block__text--card title-block__text">Ни один наш сотрудник не имеет IQ ниже 50.
+                        Показываем справки, если вы не согласны.</p>
+                </div>
+                <div class="soc">
+                        <a href="" class="soc__button">
+                                <i class="soc__icon fab fa-vk"></i>
+                            </a>
+                            <a href="" class="soc__button">
+                                <i class="soc__icon fab fa-facebook-f"></i>
+                            </a>
+                            <a href="" class="soc__button">
+                                <i class="soc__icon fab fa-twitter"></i>
+                            </a>
+                            <a href="" class="soc__button">
+                               <i class="soc__icon fab fa-linkedin-in"></i>
+                            </a>
+                    </div>
+            </div>
+            <div class="card--slider card">
+                    <img src="img/soc.jpg" alt="" class="card__icon--slider card__icon">
+                    <div class="title-block">
+                        <h1 class="title-block__header--card title-block__header">HR-директор</h1>
+                        <p class="title-block__text--contacts title-block__text--card title-block__text">Ни один наш сотрудник не имеет IQ ниже 50.
+                            Показываем справки, если вы не согласны.</p>
+                    </div>
+                    <div class="soc">
+                            <a href="" class="soc__button">
+                                    <i class="soc__icon fab fa-vk"></i>
+                                </a>
+                                <a href="" class="soc__button">
+                                    <i class="soc__icon fab fa-facebook-f"></i>
+                                </a>
+                                <a href="" class="soc__button">
+                                    <i class="soc__icon fab fa-twitter"></i>
+                                </a>
+                                <a href="" class="soc__button">
+                                   <i class="soc__icon fab fa-linkedin-in"></i>
+                                </a>
+                        </div>
+                </div>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="title-block title-block--body">
+                <h1 class="title-block__header">Контакты</h1>
+                <p class="title-block__text">Работать с нашей компанией - большая честь. Заполните контактную форму ниже и, может, мы вам перезвоним в удобное для нас время.</p>
+            </div>
+        </div>
+        <div class="card-block card-block--monospace">
+            <div class="card">
+                <i class="fa fa-map-marker-alt card__icon--contacts"></i>
+                <div class="title-block">
+                    <p class="title-block__text--contacts title-block__text--card title-block__text">
+                        ул. Кащенко, д.66/6
+                    </p>
+                    <p class="title-block__text--contacts title-block__text--card title-block__text">
+                        Санкт-Петербург
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                    <i class="fa fa-phone card__icon--contacts"></i>
+                <div class="title-block">
+                    <p class="title-block__text--contacts title-block__text--card title-block__text">
+                        +8801743331996
+                    </p>
+                    <p class="title-block__text--contacts title-block__text--card title-block__text">
+                        +8801928737807</p>
+                </div>
+            </div>
+            <div class="card">
+                    <i class="fa fa-envelope card__icon--contacts"></i>
+                <div class="title-block">
+                    <p class="title-block__text--contacts title-block__text--card title-block__text">
+                        rogachov@gmail.com
+                    </p>
+                    <p class="title-block__text--contacts title-block__text--card title-block__text">
+                        kopjitin@gmail.com
+                    </p>
+                </div> 
+            </div>
+        </div>
+
+        <div class="form-container">
+            <form action="" class="contact-form">
+                <div class="contact-form__inputs-container">
+                    <div class="contact-form__name-wrapper">
+                        <input type="text" class="contact-form__name" placeholder="Имя">
+                    </div>
+                    <div class="contact-form__name-wrapper">
+                        <input type="text" class="contact-form__name" placeholder="E-mail">
+                    </div>
+                </div>
+                <div class="contact-form__textarea-wrapper">
+                    <textarea name="" id="" cols="30" rows="10" class="contact-form__textarea" placeholder="Суть обращения"></textarea>
+                </div>
+                <div class="contact-form__button-wrapper">
+                    <input type="submit" class="contact-form__submit">
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.owl-carousel').owlCarousel({
+                margin:20,
+                pagination:false,
+                navigation:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:2
+                    },
+                    1000:{
+                        items:3
+                    }
+                }
+            })
+        })
+    </script>
+    <script src="js/index.js"></script>
 </body>
+
 </html>

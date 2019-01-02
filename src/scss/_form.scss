@@ -1,0 +1,55 @@
+.form-container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contact-form {
+
+    &__inputs-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__name-wrapper {
+        height: 40px;
+        width: 48%;
+    }
+
+    &__name {
+        height: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 20px;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+    }
+
+    &__textarea-wrapper {
+        margin: 26px 0;
+    }
+
+    &__textarea {
+        max-width: 800px;
+        width: 100%;
+        resize: none;
+        border-radius: 5px;
+        outline: none;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    &__button-wrapper {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__submit {
+        padding: 10px;
+        border: none;
+        font: inherit;
+        color: inherit;
+        background-color: #fff;
+    }
+}
