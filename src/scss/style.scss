@@ -24,6 +24,9 @@ section {
     justify-content: center;
     margin: 0 auto;
     position: relative;
+    &--team {
+        flex-direction: column;
+    }
 }
 .container-top {
     margin: 0 auto;
@@ -43,9 +46,10 @@ section {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    max-width: 558px;
-    width: 100%;
     font-family: 'Tahoma';
+}
+.navigation__element {
+    margin-right: 15px;
 }
 .navigation__link {
     display: block;
@@ -123,6 +127,9 @@ section {
 
 .title-block--body {
     margin-bottom: 110px;
+    @media screen and(max-width: 570px) {
+        margin-bottom: 30px;
+    }
 }
 
 //Кнопки
@@ -133,6 +140,16 @@ section {
     text-transform: uppercase;
     color: white;
     margin-bottom: 10px;
+
+    &--body {
+        color: black;
+        border: 2px solid #000;
+        margin: 50px 0 0 0;
+        &:hover {
+            border: 2px solid rgb(163, 26, 26);
+            color: white;
+        }
+    }
 }
 
 .scroll-button:hover {
@@ -166,6 +183,19 @@ section {
     &--slider {
         max-width: none;
     }
+
+    &--grid-el {
+        max-width: 272px;
+        margin: 0 auto;
+        background:white;
+        padding: 50px;
+        width: auto;
+
+        &:hover {
+            background: #00897b;
+            color: white;
+        }
+    }
 }
 
 .card__icon {
@@ -175,6 +205,10 @@ section {
     &--slider {
         max-height: none;
         border-radius: 10px;
+    }
+
+    &--services {
+        font-size: 60px;
     }
 }
     
@@ -247,11 +281,19 @@ section {
         justify-content: space-between;
         width: 100%;
         margin-top: 100px;
+        @media screen and (max-width: 570px) {
+            flex-direction: column;
+            margin-top: 50px;
+        }
     }
     
     &__name-wrapper {
         height: 40px;
         width: 48%;
+        @media screen and (max-width: 570px) {
+            width: 100%;
+            margin-bottom: 10px;
+        }
     }
 
     &__name {
@@ -268,6 +310,10 @@ section {
         margin: 26px 0;
         width: 100%;
         max-width: 100%;
+        @media screen and (max-width: 570px) {
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
     }
 
     &__textarea {
@@ -284,11 +330,15 @@ section {
         display: flex;
         justify-content: flex-end;
         width: 100%;
+        @media screen and (max-width: 570px) {
+           justify-content: center;
+        }
     }
 
     &__submit {
         padding: 14px 30px;
         border: none;
+        border-radius: 5px;
     }
 }
 
@@ -314,12 +364,31 @@ section {
     }
 }
 
-@media screen and (max-width: 650px) {
-    .development-container {
-        padding-top: 150px;
+.services {
+    background:#e4fdf9;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
     }
-    .title-block__header-development {
-        font-size: 50px;
+}
+
+
+@media screen and (min-width: 766px) and (max-width: 1175px) {
+    .services {
+        &__wrapper {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    .card {
+        &--grid-el {
+            &:nth-child(even) {
+                margin: 0 auto 0 0;
+            }
+            &:nth-child(odd) {
+                margin: 0 0 0 auto;
+            }
+        }
     }
 }
 
@@ -332,5 +401,31 @@ section {
         display: block;
         margin-right: 15px;
         font-size: 30px;
+    }
+
+    .services {
+        &__wrapper {
+            grid-template-columns: 1fr;
+        }
+    }
+    .card {
+        &--contacts {
+            &:not(:last-child) {
+                margin-bottom: 50px;
+            }
+        }
+    }
+    .card-block {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .development-container {
+        padding-top: 150px;
+    }
+    .title-block__header-development {
+        font-size: 50px;
     }
 }
