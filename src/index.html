@@ -4,9 +4,10 @@
 <head>
 
     <!--  Meta  -->
-    <meta charset="UTF-8" />
     <title>"КБ Очумелые Ручки"</title>
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--  Styles  -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
@@ -18,28 +19,22 @@
 <body>
 
     <header class="header-top header">
-        <div class="container-top container">
+        <div class="container--top container">
             <div class="logo">
                 <p class="logo__text">ОЧРуК</p>
             </div>
             <ul class="navigation">
-                <li class="navigation__element navigation__element-selected">
-                    <a href="#" class="navigation__link">В начало</a>
+                <li class="navigation__element navigation__element--selected">
+                    <a href="#about" class="navigation__link">Про нас</a>
                 </li>
                 <li class="navigation__element">
-                    <a href="#" class="navigation__link">Про нас</a>
+                    <a href="#services" class="navigation__link">Услуги</a>
                 </li>
                 <li class="navigation__element">
-                    <a href="#" class="navigation__link">Услуги</a>
+                    <a href="#team" class="navigation__link">Команда</a>
                 </li>
                 <li class="navigation__element">
-                    <a href="#" class="navigation__link">Портфолио</a>
-                </li>
-                <li class="navigation__element">
-                    <a href="#" class="navigation__link">Блог</a>
-                </li>
-                <li class="navigation__element">
-                    <a href="#" class="navigation__link">Контакты</a>
+                    <a href="#contacts" class="navigation__link">Контакты</a>
                 </li>
             </ul>
             <div class="hamburger">
@@ -53,27 +48,27 @@
             <h1 class="title-block__header title-block__header-development">КБ Очумелые Ручки</h1>
             <p class="title-block__text title-block__text-development">Умеем не все, беремся за что угодно!</p>
             <div class="title-block__buttons-block">
-                <a href="#" class="scroll-button">
+                <a href="#services" class="scroll-button">
                     наши услуги
                 </a>
-                <a href="#" class="scroll-button">
+                <a href="#team" class="scroll-button">
                     наша команда
                 </a>
             </div>
-            <a href="#" class="development-arrow"><i class="fas fa-angle-double-down"></i></a>
+            <a href="#about" class="development-arrow"><i class="fas fa-angle-double-down"></i></a>
         </div>
     </section>
 
-    <section class="about-section">
+    <section class="about-section" id="about">
         <div class="container">
             <div class="title-block title-block--body">
                 <h1 class="title-block__header">Про нас</h1>
                 <p class="title-block__text">
-                    Делаем сайты: лендинги, интернет-магазины, веб-приложения. <br>
+                    Делаем сайты: лендинги, интернет-магазины, веб-приложения. 
                     Верстаем <strong>HTML</strong>,
-                    стилизуем <strong>CSS</strong>, программируем <strong>JavaScript</strong>. <br>
-                    Любим <strong>jQuery</strong> и <strong>Bootstrap</strong>, иногда даже используем. <br>
-                    Не затягиваем сроки судебными исками.<br> 
+                    стилизуем <strong>CSS</strong>, программируем <strong>JavaScript</strong>. 
+                    Любим <strong>jQuery</strong> и <strong>Bootstrap</strong>. 
+                    Не затягиваем сроки судебными исками.
                     Берем дорого.
                 </p>
             </div>
@@ -83,7 +78,7 @@
                 <img src="img/internet.png" alt="" class="card__icon">
                 <div class="title-block">
                     <h1 class="title-block__header--card title-block__header">Рисуем иконки</h1>
-                    <p class="title-block__text--contacts title-block__text--card title-block__text">Даже держим художницу в штате. Любой каприз за
+                    <p class=" title-block__text--card title-block__text">Даже держим художницу в штате. Любой каприз за
                         ваши деньги, как говорят у нас в Одессе.</p>
                 </div>
             </div>
@@ -91,7 +86,7 @@
                 <img src="img/transfer.png" alt="" class="card__icon">
                 <div class="title-block">
                     <h1 class="title-block__header--card title-block__header">Не хамим</h1>
-                    <p class="title-block__text--contacts title-block__text--card title-block__text">Клиент всегда прав, даже если не прав. Ругаем
+                    <p class=" title-block__text--card title-block__text">Клиент всегда прав, даже если не прав. Ругаем
                         вас исключительно в корпоративном чате.</p>
                 </div>
             </div>
@@ -99,161 +94,126 @@
                 <img src="img/head.png" alt="" class="card__icon">
                 <div class="title-block">
                     <h1 class="title-block__header--card title-block__header">Быстро соображаем</h1>
-                    <p class="title-block__text--contacts title-block__text--card title-block__text">Ни один наш сотрудник не имеет IQ ниже 50.
+                    <p class=" title-block__text--card title-block__text">Ни один наш сотрудник не имеет IQ ниже 50.
                         Показываем справки, если вы не согласны.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="team-section">
-        <div class="container">
+    <section class="services" id="services">
+            <div class="title-block title-block--body">
+                    <h1 class="title-block__header">Наши услуги</h1>
+                    <p class="title-block__text">
+                        Самые услужные услуги на рынке услуг. Кстати, мы двадцать лет на рынке. Не на плодово-овощном, как вы, уважаемый заказчик, могли подумать. Иногда надо и мозги включать!
+                    </p>
+                </div>
+        <div class="services__wrapper container">
+            <div class="card--grid-el card">
+                    <i class="fas fa-mobile-alt card__icon--services"></i>
+                <div class="title-block">
+                    <h1 class="title-block__header--card title-block__header">Дизайн</h1>
+                    <p class=" title-block__text--card title-block__text">Не приготовили макет? Мы нарисуем его, 
+                        даже если в отпуске все кроме дворника Петровича!</p>
+                </div>
+                <div class="button-wrapper">
+                    <a href="#" class="scroll-button--body scroll-button">Заказать!</a>
+                </div>
+            </div>
+            <div class="card--grid-el card">
+                    <i class="fas fa-mobile-alt card__icon--services"></i>
+                <div class="title-block">
+                    <h1 class="title-block__header--card title-block__header">Программирование</h1>
+                    <p class=" title-block__text--card title-block__text">Мы программируем на HTML, CSS и даже jQuery. 
+                        Опытные специалисты из Ташкента!</p>
+                </div>
+                <div class="button-wrapper">
+                    <a href="#" class="scroll-button--body scroll-button scroll-button--body">Заказать!</a>
+                </div>
+            </div>
+            <div class="card--grid-el card">
+                    <i class="fas fa-mobile-alt card__icon--services"></i>
+                <div class="title-block">
+                    <h1 class="title-block__header--card title-block__header">Документация</h1>
+                    <p class=" title-block__text--card title-block__text">Создаем документальное сопровождение программных 
+                        продуктов матерными комментариями в коде.</p>
+                </div>
+                <div class="button-wrapper">
+                    <a href="#" class="scroll-button--body scroll-button">Заказать!</a>
+                </div>
+            </div>
+            <div class="card--grid-el card">
+                    <i class="fas fa-mobile-alt card__icon--services"></i>
+                <div class="title-block">
+                    <h1 class="title-block__header--card title-block__header">Поддержка</h1>
+                    <p class=" title-block__text--card title-block__text">Если не горит кнопочка или нужно поменять картинки, 
+                        звоните. Вообще без базара, начальник!</p>
+                </div>
+                <div class="button-wrapper">
+                    <a href="#" class="scroll-button--body scroll-button">Заказать!</a>
+                </div>
+            </div>
+            <div class="card--grid-el card">
+                    <i class="fas fa-mobile-alt card__icon--services"></i>
+                <div class="title-block">
+                    <h1 class="title-block__header--card title-block__header">Покупка домена</h1>
+                    <p class=" title-block__text--card title-block__text">Для самых умных и красивых наших клиентов сами 
+                        купим домен и привяжем к хостингу.</p>
+                </div>
+                <div class="button-wrapper">
+                    <a href="#" class="scroll-button--body scroll-button">Заказать!</a>
+                </div>
+            </div>
+            <div class="card--grid-el card">
+                <!-- <img src="img/head.png" alt="" class="card__icon"> -->
+                <i class="fas fa-mobile-alt card__icon--services"></i>
+                <div class="title-block">
+                    <h1 class="title-block__header--card title-block__header">Администрирование</h1>
+                    <p class=" title-block__text--card title-block__text">Берем на администрирование легаси-проекты. 
+                        Мы любим старый код без документации!</p>
+                </div>
+                <div class="button-wrapper">
+                    <a href="#" class="scroll-button--body scroll-button">Заказать!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team-section" id="team">
+        <div class="container--team container">
             <div class="title-block title-block--body">
                 <h1 class="title-block__header">Наша команда</h1>
                 <p class="title-block__text">
-                Вглядитесь в эти лица! Разве могут эти люди сорвать сроки, не выполнить задач, запросить сверху денег? Конечно, могут!
+                Вглядитесь в эти лица! Разве могут эти люди сорвать сроки, не выполнить задач, запросить сверху денег? Конечно, <strong>могут</strong>!
                 </p>
             </div>
-        </div>
-        
-        <div class="slider owl-carousel owl-theme">
-                <div class="card--slider card">
-                        <img src="img/techlead.jpeg" alt="" class="card__icon--slider card__icon">
-                        <div class="title-block">
-                            <h1 class="title-block__header--card title-block__header">Технический директор</h1>
-                            <p class="title-block__text--contacts title-block__text--card title-block__text">"Реактивная скорость, передовые технологии и приверженность делу - вот что делает нас лучшими!"</p>
-                        </div>
-                        <div class="soc">
-                                <a href="" class="soc__button">
-                                        <i class="soc__icon fab fa-vk"></i>
-                                    </a>
-                                    <a href="" class="soc__button">
-                                        <i class="soc__icon fab fa-facebook-f"></i>
-                                    </a>
-                                    <a href="" class="soc__button">
-                                        <i class="soc__icon fab fa-twitter"></i>
-                                    </a>
-                                    <a href="" class="soc__button">
-                                       <i class="soc__icon fab fa-linkedin-in"></i>
-                                    </a>
+            <div class="slider owl-carousel owl-theme">
+                    <div class="card--slider card">
+                            <img src="img/techlead.jpeg" alt="" class="card__icon--slider card__icon">
+                            <div class="title-block">
+                                <h1 class="title-block__header--card title-block__header">Технический директор</h1>
+                                <!-- <p class=" title-block__text--card title-block__text">"<strong>Реактивная</strong> скорость, передовые технологии и приверженность делу - вот что делает нас лучшими!"</p> -->
                             </div>
-                    </div>
-            <div class="card--slider card">
-                <img src="img/programmer.jpg" alt="" class="card__icon--slider card__icon">
-                <div class="title-block">
-                    <h1 class="title-block__header--card title-block__header">Frontend-разработчик</h1>
-                    <p class="title-block__text--contacts title-block__text--card title-block__text">"Создание интерфейсов, способствующих глубокой конверсии, - мой конёк. Наслаждаюсь своей работой!"</p>
-                </div>
-                <div class="soc">
-                        <a href="" class="soc__button">
-                                <i class="soc__icon fab fa-vk"></i>
-                            </a>
-                            <a href="" class="soc__button">
-                                <i class="soc__icon fab fa-facebook-f"></i>
-                            </a>
-                            <a href="" class="soc__button">
-                                <i class="soc__icon fab fa-twitter"></i>
-                            </a>
-                            <a href="" class="soc__button">
-                               <i class="soc__icon fab fa-linkedin-in"></i>
-                            </a>
-                    </div>
-            </div>
-            <div class="card--slider card">
-                <div class="img-wrap">
-                    <img src="img/back_.jpg" alt="" class="card__icon--slider card__icon">
-                </div>
-                <div class="title-block">
-                    <h1 class="title-block__header--card title-block__header">Backend-разработчик</h1>
-                    <p class="title-block__text--contacts title-block__text--card title-block__text">"Доверьте нам разработку серверной части. Больше никаких ловушек и сюрпризов для вашего бизнеса!"</p>
-                </div>
-                <div class="soc">
-                        <a href="" class="soc__button">
-                                <i class="soc__icon fab fa-vk"></i>
-                            </a>
-                            <a href="" class="soc__button">
-                                <i class="soc__icon fab fa-facebook-f"></i>
-                            </a>
-                            <a href="" class="soc__button">
-                                <i class="soc__icon fab fa-twitter"></i>
-                            </a>
-                            <a href="" class="soc__button">
-                               <i class="soc__icon fab fa-linkedin-in"></i>
-                            </a>
-                    </div>
-            </div>
-            <div class="card--slider card">
-                <img src="img/copywriter.jpg" alt="" class="card__icon--slider card__icon">
-                <div class="title-block">
-                    <h1 class="title-block__header--card title-block__header">Cистемный администратор</h1>
-                    <p class="title-block__text--contacts title-block__text--card title-block__text">Ни один наш сотрудник не имеет IQ ниже 50.
-                        Показываем справки, если вы не согласны.</p>
-                </div>
-                <div class="soc">
-                        <a href="" class="soc__button">
-                                <i class="soc__icon fab fa-vk"></i>
-                            </a>
-                            <a href="" class="soc__button">
-                                <i class="soc__icon fab fa-facebook-f"></i>
-                            </a>
-                            <a href="" class="soc__button">
-                                <i class="soc__icon fab fa-twitter"></i>
-                            </a>
-                            <a href="" class="soc__button">
-                               <i class="soc__icon fab fa-linkedin-in"></i>
-                            </a>
-                    </div>
-            </div>
-            <div class="card--slider card">
-                <img src="img/fin.jpg" alt="" class="card__icon--slider card__icon">
-                <div class="title-block">
-                    <h1 class="title-block__header--card title-block__header">Менеджер проектов</h1>
-                    <p class="title-block__text--contacts title-block__text--card title-block__text">Ни один наш сотрудник не имеет IQ ниже 50.
-                        Показываем справки, если вы не согласны.</p>
-                </div>
-                <div class="soc">
-                        <a href="" class="soc__button">
-                                <i class="soc__icon fab fa-vk"></i>
-                            </a>
-                            <a href="" class="soc__button">
-                                <i class="soc__icon fab fa-facebook-f"></i>
-                            </a>
-                            <a href="" class="soc__button">
-                                <i class="soc__icon fab fa-twitter"></i>
-                            </a>
-                            <a href="" class="soc__button">
-                               <i class="soc__icon fab fa-linkedin-in"></i>
-                            </a>
-                    </div>
-            </div>
-            <div class="card--slider card">
-                <img src="img/buh.jpeg" alt="" class="card__icon--slider card__icon">
-                <div class="title-block">
-                    <h1 class="title-block__header--card title-block__header">Финансовый директор</h1>
-                    <p class="title-block__text--contacts title-block__text--card title-block__text">Ни один наш сотрудник не имеет IQ ниже 50.
-                        Показываем справки, если вы не согласны.</p>
-                </div>
-                <div class="soc">
-                        <a href="" class="soc__button">
-                                <i class="soc__icon fab fa-vk"></i>
-                            </a>
-                            <a href="" class="soc__button">
-                                <i class="soc__icon fab fa-facebook-f"></i>
-                            </a>
-                            <a href="" class="soc__button">
-                                <i class="soc__icon fab fa-twitter"></i>
-                            </a>
-                            <a href="" class="soc__button">
-                               <i class="soc__icon fab fa-linkedin-in"></i>
-                            </a>
-                    </div>
-            </div>
-            <div class="card--slider card">
-                    <img src="img/soc.jpg" alt="" class="card__icon--slider card__icon">
+                            <div class="soc">
+                                    <a href="" class="soc__button">
+                                            <i class="soc__icon fab fa-vk"></i>
+                                        </a>
+                                        <a href="" class="soc__button">
+                                            <i class="soc__icon fab fa-facebook-f"></i>
+                                        </a>
+                                        <a href="" class="soc__button">
+                                            <i class="soc__icon fab fa-twitter"></i>
+                                        </a>
+                                        <a href="" class="soc__button">
+                                           <i class="soc__icon fab fa-linkedin-in"></i>
+                                        </a>
+                                </div>
+                        </div>
+                <div class="card--slider card">
+                    <img src="img/programmer.jpg" alt="" class="card__icon--slider card__icon">
                     <div class="title-block">
-                        <h1 class="title-block__header--card title-block__header">HR-директор</h1>
-                        <p class="title-block__text--contacts title-block__text--card title-block__text">Ни один наш сотрудник не имеет IQ ниже 50.
-                            Показываем справки, если вы не согласны.</p>
+                        <h1 class="title-block__header--card title-block__header">Frontend-разработчик</h1>
+                        <!-- <p class=" title-block__text--card title-block__text">"Создание интерфейсов, способствующих <strong>глубокой</strong> конверсии, - мой конёк. Положитесь на меня!"</p> -->
                     </div>
                     <div class="soc">
                             <a href="" class="soc__button">
@@ -270,18 +230,130 @@
                                 </a>
                         </div>
                 </div>
+                <div class="card--slider card">
+                    <div class="img-wrap">
+                        <img src="img/back_.jpg" alt="" class="card__icon--slider card__icon">
+                    </div>
+                    <div class="title-block">
+                        <h1 class="title-block__header--card title-block__header">Backend-разработчик</h1>
+                        <!-- <p class=" title-block__text--card title-block__text">"Доверьте нам разработку серверной части. Больше никаких <strong>ловушек</strong> для вашего бизнеса!"</p> -->
+                    </div>
+                    <div class="soc">
+                            <a href="" class="soc__button">
+                                    <i class="soc__icon fab fa-vk"></i>
+                                </a>
+                                <a href="" class="soc__button">
+                                    <i class="soc__icon fab fa-facebook-f"></i>
+                                </a>
+                                <a href="" class="soc__button">
+                                    <i class="soc__icon fab fa-twitter"></i>
+                                </a>
+                                <a href="" class="soc__button">
+                                   <i class="soc__icon fab fa-linkedin-in"></i>
+                                </a>
+                        </div>
+                </div>
+                <div class="card--slider card">
+                    <img src="img/copywriter.jpg" alt="" class="card__icon--slider card__icon">
+                    <div class="title-block">
+                        <h1 class="title-block__header--card title-block__header">Cистемный администратор</h1>
+                        <!-- <p class=" title-block__text--card title-block__text">Ни один наш сотрудник не имеет IQ ниже 50.
+                            Показываем справки, если вы не согласны.</p> -->
+                    </div>
+                    <div class="soc">
+                            <a href="" class="soc__button">
+                                    <i class="soc__icon fab fa-vk"></i>
+                                </a>
+                                <a href="" class="soc__button">
+                                    <i class="soc__icon fab fa-facebook-f"></i>
+                                </a>
+                                <a href="" class="soc__button">
+                                    <i class="soc__icon fab fa-twitter"></i>
+                                </a>
+                                <a href="" class="soc__button">
+                                   <i class="soc__icon fab fa-linkedin-in"></i>
+                                </a>
+                        </div>
+                </div>
+                <div class="card--slider card">
+                    <img src="img/fin.jpg" alt="" class="card__icon--slider card__icon">
+                    <div class="title-block">
+                        <h1 class="title-block__header--card title-block__header">Менеджер проектов</h1>
+                        <!-- <p class=" title-block__text--card title-block__text">Ни один наш сотрудник не имеет IQ ниже 50.
+                            Показываем справки, если вы не согласны.</p> -->
+                    </div>
+                    <div class="soc">
+                            <a href="" class="soc__button">
+                                    <i class="soc__icon fab fa-vk"></i>
+                                </a>
+                                <a href="" class="soc__button">
+                                    <i class="soc__icon fab fa-facebook-f"></i>
+                                </a>
+                                <a href="" class="soc__button">
+                                    <i class="soc__icon fab fa-twitter"></i>
+                                </a>
+                                <a href="" class="soc__button">
+                                   <i class="soc__icon fab fa-linkedin-in"></i>
+                                </a>
+                        </div>
+                </div>
+                <div class="card--slider card">
+                    <img src="img/buh.jpeg" alt="" class="card__icon--slider card__icon">
+                    <div class="title-block">
+                        <h1 class="title-block__header--card title-block__header">Финансовый директор</h1>
+                        <!-- <p class=" title-block__text--card title-block__text">Ни один наш сотрудник не имеет IQ ниже 50.
+                            Показываем справки, если вы не согласны.</p> -->
+                    </div>
+                    <div class="soc">
+                            <a href="" class="soc__button">
+                                    <i class="soc__icon fab fa-vk"></i>
+                                </a>
+                                <a href="" class="soc__button">
+                                    <i class="soc__icon fab fa-facebook-f"></i>
+                                </a>
+                                <a href="" class="soc__button">
+                                    <i class="soc__icon fab fa-twitter"></i>
+                                </a>
+                                <a href="" class="soc__button">
+                                   <i class="soc__icon fab fa-linkedin-in"></i>
+                                </a>
+                        </div>
+                </div>
+                <div class="card--slider card">
+                        <img src="img/soc.jpg" alt="" class="card__icon--slider card__icon">
+                        <div class="title-block">
+                            <h1 class="title-block__header--card title-block__header">HR-директор</h1>
+                            <!-- <p class=" title-block__text--card title-block__text">Ни один наш сотрудник не имеет IQ ниже 50.
+                                Показываем справки, если вы не согласны.</p> -->
+                        </div>
+                        <div class="soc">
+                                <a href="" class="soc__button">
+                                        <i class="soc__icon fab fa-vk"></i>
+                                    </a>
+                                    <a href="" class="soc__button">
+                                        <i class="soc__icon fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="" class="soc__button">
+                                        <i class="soc__icon fab fa-twitter"></i>
+                                    </a>
+                                    <a href="" class="soc__button">
+                                       <i class="soc__icon fab fa-linkedin-in"></i>
+                                    </a>
+                            </div>
+                    </div>
+            </div>
         </div>
     </section>
 
-    <section class="contact-section">
+    <section class="contact-section" id="contacts">
         <div class="container">
             <div class="title-block title-block--body">
                 <h1 class="title-block__header">Контакты</h1>
-                <p class="title-block__text">Работать с нашей компанией - большая честь. Заполните контактную форму ниже и, может, мы вам перезвоним в удобное для нас время.</p>
+                <p class="title-block__text">Работать с нашей компанией - большая честь. Свяжитесь с нами или заполните контактную форму ниже - мы обязательно перезвоним в удобное для нас время.</p>
             </div>
         </div>
         <div class="card-block card-block--monospace">
-            <div class="card">
+            <div class="card--contacts card">
                 <i class="fa fa-map-marker-alt card__icon--contacts"></i>
                 <div class="title-block">
                     <p class="title-block__text--contacts title-block__text--card title-block__text">
@@ -292,25 +364,25 @@
                     </p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card--contacts card">
                     <i class="fa fa-phone card__icon--contacts"></i>
                 <div class="title-block">
-                    <p class="title-block__text--contacts title-block__text--card title-block__text">
-                        +8801743331996
-                    </p>
-                    <p class="title-block__text--contacts title-block__text--card title-block__text">
-                        +8801928737807</p>
+                    <a href="tel:+7(967)3365216" class="title-block__text--contacts title-block__text--card title-block__text">
+                        +7(967)3365216
+                    </a>
+                    <a href="tel:+7(812)6125633" class="title-block__text--contacts title-block__text--card title-block__text">
+                        +7(812)6125633</a>
                 </div>
             </div>
-            <div class="card">
+            <div class="card--contacts card">
                     <i class="fa fa-envelope card__icon--contacts"></i>
                 <div class="title-block">
-                    <p class="title-block__text--contacts title-block__text--card title-block__text">
+                    <a href="mailto:rogachov@gmail.com" class="title-block__text--contacts title-block__text--card title-block__text">
                         rogachov@gmail.com
-                    </p>
-                    <p class="title-block__text--contacts title-block__text--card title-block__text">
+                    </a>
+                    <a href="mailto:kopjitin@gmail.com" class="title-block__text--contacts title-block__text--card title-block__text">
                         kopjitin@gmail.com
-                    </p>
+                    </a>
                 </div> 
             </div>
         </div>
@@ -356,6 +428,14 @@
                     }
                 }
             })
+
+            $('a[href^="#"]').click(function() {
+                let target = $(this).attr('href');
+                $('html, body').animate({
+                    scrollTop: $(target).offset().top
+                }, 1000);
+                    return false;
+            });
         })
     </script>
     <script src="js/index.js"></script>
